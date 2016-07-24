@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.Toolbar
+            android:fitsSystemWindows="true"
+            android:id="@+id/toolbarInDetail"
+            android:layout_width="match_parent"
+            android:background="@color/colorPrimary"
+            app:titleTextColor="@color/white"
+            android:paddingEnd="16dp"
+            android:layout_height="50dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <ImageView
+                    android:id="@+id/back_weiboDetail"
+                    android:layout_width="30dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center_vertical"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_arrow_back_24dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="微博详情"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:layout_gravity="bottom"
+                    android:background="#cfcfcf"></LinearLayout>
+
+            </FrameLayout>
+
+        </android.support.v7.widget.Toolbar>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/myCommentsList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

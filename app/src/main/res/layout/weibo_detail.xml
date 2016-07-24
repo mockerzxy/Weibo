@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:orientation="vertical">-->
+
+
+<android.support.design.widget.CoordinatorLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:fitsSystemWindows="true"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/collapseLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:contentScrim="@color/colorPrimary"
+                app:statusBarScrim="@color/colorPrimary"
+                app:expandedTitleTextAppearance="@style/collapsing"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:fitsSystemWindows="true"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:scaleType="centerCrop"
+                        android:fitsSystemWindows="true"
+                        android:src="@drawable/sunny" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:fitsSystemWindows="true"
+                        android:background="@drawable/shadow_for_pic"/>
+                </FrameLayout>
+
+
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbarInDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="top"
+                    app:layout_collapseMode="pin">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/back_weiboDetail"
+                            android:layout_width="30dp"
+                            android:layout_height="35dp"
+                            android:layout_centerVertical="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ic_arrow_back_24dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:text="微博正文"
+                            android:textColor="#FFFFFF"
+                            android:textSize="20dp" />
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.Toolbar>
+            </android.support.design.widget.CollapsingToolbarLayout>
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tabOfDetailPage"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#FFFFFF"
+                app:tabIndicatorColor="#FFC125"
+                app:tabSelectedTextColor="#FF00FF"
+                android:elevation="2dp"
+                >
+
+            </android.support.design.widget.TabLayout>
+
+            
+        </android.support.design.widget.AppBarLayout>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewPageOfDetailPage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                />
+
+
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="bottom"-->
+        <!--android:orientation="vertical">-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:background="#cfcfcf">-->
+
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/bottomTool"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:background="#FFFFFF"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/repostInDetail"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:drawableStart="@drawable/ic_reply_24dp_gray"-->
+                <!--android:gravity="center_vertical|center_horizontal"-->
+                <!--android:text="转发"-->
+
+                <!--android:textSize="15dp"-->
+
+                <!--/>-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/commentInDetail"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:drawableStart="@drawable/ic_insert_comment_24dp_gray"-->
+                <!--android:gravity="center_vertical|center_horizontal"-->
+                <!--android:text="评论"-->
+                <!--android:textSize="15dp"-->
+
+                <!--/>-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/praiseInDetail"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:drawableStart="@drawable/ic_thumb_up_24dp_gray"-->
+                <!--android:gravity="center_vertical|center_horizontal"-->
+                <!--android:text="赞"-->
+                <!--android:textSize="15dp" />-->
+
+        <!--</LinearLayout>-->
+
+    <!--</LinearLayout>-->
+
+
+
+<!--</LinearLayout>-->

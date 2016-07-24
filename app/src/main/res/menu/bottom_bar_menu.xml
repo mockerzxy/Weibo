@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+    android:id="@+id/home"
+    android:icon="@drawable/ic_home_24dp"
+    android:title="首页"/>
+    <item
+        android:id="@+id/message"
+        android:icon="@drawable/ic_mail_24dp"
+        android:title="消息"/>
+    <item
+        android:id="@+id/write"
+        android:icon="@drawable/ic_local_hospital_24dp"
+        android:title="发布"
+        />
+    <item
+        android:id="@+id/UserHome"
+        android:icon="@drawable/ic_timer_auto_24dp"
+        android:title="我"/>
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/ic_search_24dp"
+        android:title="发现"/>
+</menu>

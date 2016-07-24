@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="280dp"
+    android:padding="6dp"
+    android:background="@drawable/dialog_backgroud"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:padding="6dp"
+        android:orientation="horizontal">
+        <ImageView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/write_icon"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="分享"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@color/colorPrimary"
+    ></LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <EditText
+            android:id="@+id/writeEditBox"
+            android:layout_width="match_parent"
+            android:hint="share"
+            android:textSize="16sp"
+            android:background="@null"
+            android:gravity="top"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/show"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/writeEditBox"
+            android:scaleType="centerCrop"
+            android:layout_width="70dp"
+            android:layout_height="70dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimary"
+        ></LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:padding="6dp"
+        android:elevation="2dp"
+        >
+        <ImageView
+            android:id="@+id/selectPic"
+            android:layout_centerVertical="true"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:background="@drawable/button_backgroud"
+            android:src="@drawable/ic_panorama_24dp"
+            android:layout_gravity="center_vertical"
+            />
+        <ImageView
+            android:layout_toEndOf="@id/selectPic"
+            android:id="@+id/TakePhoto"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_camera_alt_24dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"/>
+        <Button
+            android:layout_centerVertical="true"
+            android:id="@+id/sendButton"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:background="?android:attr/selectableItemBackground"
+            android:textColor="@color/colorPrimary"
+            android:text="发送"
+            android:textSize="15sp"
+             />
+    </RelativeLayout>
+
+
+</LinearLayout>
